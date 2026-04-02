@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammed Ahmed Rashid</title>
+    <meta
+      name="description"
+      content="Mohammed Ahmed Rashid, CEO and entrepreneur from Sulaymaniyah."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="ambient ambient-left"></div>
+    <div class="ambient ambient-right"></div>
+    <div class="beam beam-left" aria-hidden="true"></div>
+    <div class="beam beam-right" aria-hidden="true"></div>
+
+    <main class="page-shell">
+      <section class="hero panel reveal">
+        <div class="hero-copy">
+          <div class="crest" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="name-lockup" aria-label="Mohammed Ahmed Rashid">
+            <p class="eyebrow">Personal Brand Profile</p>
+            <h1>Mohammed</h1>
+            <p class="name-secondary">Ahmed Rashid</p>
+          </div>
+
+          <div class="identity-line">
+            <p class="hero-subtitle">CEO</p>
+            <span class="identity-separator" aria-hidden="true"></span>
+            <p class="hero-location">Sulaymaniyah, Iraq</p>
+          </div>
+          <p class="lead">
+            Mohammed Ahmed Rashid is a CEO and entrepreneur from Sulaymaniyah
+            with business experience across multiple sectors. He leads several
+            companies and is driven by growth, new opportunities, and creating
+            meaningful impact through his work.
+          </p>
+
+          <div class="value-chips">
+            <span class="value-chip">Leadership</span>
+            <span class="value-chip">Discipline</span>
+            <span class="value-chip">Innovation</span>
+            <span class="value-chip">Focus</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#links">Profile Links</a>
+            <a class="button button-secondary" href="#details">Quick Details</a>
+          </div>
+
+          <div class="profile-meta" id="details">
+            <article class="meta-card">
+              <span class="meta-label">Title</span>
+              <strong>CEO</strong>
+            </article>
+            <article class="meta-card">
+              <span class="meta-label">Background</span>
+              <strong>Business leadership across different sectors</strong>
+            </article>
+            <article class="meta-card">
+              <span class="meta-label">Location</span>
+              <strong>Sulaymaniyah, Iraq</strong>
+            </article>
+          </div>
+        </div>
+
+        <div class="portrait-stage">
+          <div class="planet-layer reveal" aria-hidden="true">
+            <div class="planet-halo"></div>
+            <div class="planet-sphere">
+              <canvas class="planet-canvas" id="planet-canvas"></canvas>
+            </div>
+            <video
+              class="planet-source"
+              id="planet-video"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="auto"
+            >
+              <source src="Rotating%20Planet%20Earth%204K%20Loop.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div class="portrait-orbit" aria-hidden="true">
+            <span class="orbit-line orbit-line-one"></span>
+            <span class="orbit-line orbit-line-two"></span>
+            <span class="orbit-dot orbit-dot-one"></span>
+          </div>
+
+          <div class="portrait-pedestal" aria-hidden="true"></div>
+
+          <div class="portrait-frame">
+            <div class="portrait-ring"></div>
+            <img
+              src="mohammed-cropped.png"
+              alt="Portrait of Mohammed Ahmed Rashid"
+              class="portrait"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="links-section reveal" id="links">
+        <div class="section-heading">
+          <p class="eyebrow">Connect</p>
+          <h2>Social and contact links</h2>
+          <p>Direct contact and professional channels.</p>
+        </div>
+        <div class="links-grid" id="links-grid"></div>
+      </section>
+
+      <section class="principles-grid reveal">
+        <article class="principle-card principle-card-wide">
+          <p class="eyebrow">Core Direction</p>
+          <h2>A sharper visual identity for a serious business profile.</h2>
+          <p>
+            The page is shaped around discipline, movement, and executive
+            presence so it feels intentional before the final details are even
+            added.
+          </p>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-number">01</span>
+          <h3>Discipline</h3>
+          <p>Structured around clarity, control, and high standards.</p>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-number">02</span>
+          <h3>Growth</h3>
+          <p>Positioned for business expansion across different sectors.</p>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-number">03</span>
+          <h3>Forward Motion</h3>
+          <p>Ready for future links, brand details, and stronger proof points.</p>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
