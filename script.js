@@ -1,9 +1,107 @@
 const profileLinks = [
-  { label: "Instagram", mark: "IG", href: "", wide: false },
-  { label: "LinkedIn", mark: "IN", href: "", wide: false },
-  { label: "WhatsApp", mark: "WA", href: "", wide: false },
-  { label: "Email", mark: "@", href: "mailto:ceo@lauz.com", wide: false },
-  { label: "Website", mark: "WB", href: "", wide: true },
+  {
+    label: "Instagram",
+    theme: "instagram",
+    href: "https://www.instagram.com/lauz.company/",
+    wide: false,
+    value: "@lauz.company",
+    icon: `
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="4" y="4" width="16" height="16" rx="4.75"></rect>
+        <circle cx="12" cy="12" r="3.65"></circle>
+        <circle class="icon-fill" cx="16.95" cy="7.1" r="1.1"></circle>
+      </svg>
+    `,
+  },
+  {
+    label: "Facebook",
+    theme: "facebook",
+    href: "https://www.facebook.com/profile.php?id=61583216708990",
+    wide: false,
+    value: "Lauz Company",
+    icon: `
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="8.3"></circle>
+        <path
+          class="icon-fill"
+          d="M13.35 8.35h1.8V6.2h-1.8c-1.88 0-3.03 1.18-3.03 3.18v1.32H8.9v2.1h1.42v4.95h2.28V12.8h2.02l.3-2.1H12.6V9.6c0-.78.28-1.25.75-1.25Z"
+        ></path>
+      </svg>
+    `,
+  },
+  {
+    label: "LinkedIn",
+    theme: "linkedin",
+    href: "https://www.linkedin.com/in/mohammed-rashid-ceo",
+    wide: false,
+    value: "Mohammed Rashid",
+    icon: `
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="4.1" y="4.1" width="15.8" height="15.8" rx="3.4"></rect>
+        <path class="icon-fill" d="M8.15 8.85a1.08 1.08 0 1 0 0-2.16a1.08 1.08 0 0 0 0 2.16Z"></path>
+        <path d="M8.15 10.5v5.35"></path>
+        <path d="M11.5 15.85V12.9c0-1.33.8-2.2 1.97-2.2c1.2 0 1.88.8 1.88 2.35v2.8"></path>
+        <path d="M11.5 10.5v5.35"></path>
+      </svg>
+    `,
+  },
+  {
+    label: "WhatsApp",
+    theme: "whatsapp",
+    href: "https://wa.me/9647700608008",
+    wide: false,
+    value: "+964 770 060 8008",
+    icon: `
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 4.35a7.45 7.45 0 0 0-6.35 11.36L5.1 19l3.3-.88A7.46 7.46 0 1 0 12 4.35Z"></path>
+        <path d="M9.55 9.4c.18-.42.38-.48.67-.48h.5c.2 0 .35.05.45.28l.68 1.62c.1.22.06.38-.06.55l-.49.66c-.08.12-.16.24-.04.45c.35.64 1.04 1.34 1.72 1.72c.2.11.33.06.45-.03l.67-.5c.16-.11.35-.15.55-.05l1.6.69c.25.1.31.25.31.44v.53c0 .29-.12.53-.41.69c-.53.29-1.69.39-3.37-.32c-1.42-.6-2.95-2.06-3.6-3.62c-.66-1.61-.52-2.79-.17-3.34Z"></path>
+      </svg>
+    `,
+  },
+  {
+    label: "Email",
+    theme: "email",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=ceo@lauz.com",
+    wide: false,
+    value: "ceo@lauz.com",
+    icon: `
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="3.7" y="5.7" width="16.6" height="12.6" rx="2.2"></rect>
+        <path d="M4.9 7.1L12 12.85l7.1-5.75"></path>
+        <path d="M7.2 12.2l-2.3 2.25"></path>
+        <path d="M16.8 12.2l2.3 2.25"></path>
+      </svg>
+    `,
+  },
+  {
+    label: "TikTok",
+    theme: "tiktok",
+    href: "https://www.tiktok.com/@lauz.company",
+    wide: false,
+    value: "@lauz.company",
+    icon: `
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path
+          class="icon-fill"
+          d="M14.9 5.1c.38 1.26 1.45 2.3 2.95 2.6v2.08c-.92 0-1.83-.23-2.75-.68v4.02c0 2.37-1.78 4.15-4.18 4.15c-2.26 0-4.02-1.58-4.02-3.85c0-2.42 1.85-4.15 4.52-4.02v2c-1.24-.15-2.16.56-2.16 1.78c0 .95.72 1.7 1.68 1.7c1.08 0 1.86-.7 1.86-2.22V5.1Z"
+        ></path>
+        <path d="M14.9 5.1c.38 1.26 1.45 2.3 2.95 2.6"></path>
+      </svg>
+    `,
+  },
+  {
+    label: "YouTube",
+    theme: "youtube",
+    href: "https://www.youtube.com/@LauzCompany",
+    wide: false,
+    value: "@LauzCompany",
+    icon: `
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="3.7" y="6.1" width="16.6" height="11.8" rx="3.2"></rect>
+        <path class="icon-fill" d="M10.2 9.55l4.95 3.05l-4.95 3.05Z"></path>
+      </svg>
+    `,
+  },
 ];
 
 document.body.classList.add("js-ready");
@@ -15,45 +113,36 @@ const planetCanvas = document.getElementById("planet-canvas");
 
 if (linksGrid) {
   profileLinks.forEach((link) => {
-    const card = document.createElement("a");
-    const isInactive = !link.href;
+    const card = document.createElement(link.href ? "a" : "article");
 
-    card.className = "link-card reveal";
-    card.href = link.href || "#";
-    card.dataset.inactive = String(isInactive);
+    card.className = "link-card link-card-simple reveal";
     card.dataset.wide = String(Boolean(link.wide));
-    card.setAttribute(
-      "aria-label",
-      isInactive
-        ? `${link.label} placeholder`
-        : `Open ${link.label} for Mohammed Ahmed Rashid`
-    );
+    card.dataset.theme = link.theme;
 
-    if (isInactive) {
-      card.setAttribute("aria-disabled", "true");
-      card.addEventListener("click", (event) => event.preventDefault());
-    } else {
-      card.target = "_blank";
-      card.rel = "noreferrer";
+    if (link.href) {
+      card.href = link.href;
+      card.setAttribute("aria-label", `Open ${link.label} for Mohammed Ahmed Rashid`);
+
+      if (link.href.startsWith("http")) {
+        card.target = "_blank";
+        card.rel = "noreferrer";
+      }
     }
 
     card.innerHTML = `
       <div class="link-topline">
-        <span class="link-mark">${link.mark}</span>
-        <span class="link-status">
-          <span class="status-dot"></span>
-          ${isInactive ? "Add URL" : "Live"}
+        <span class="link-mark">
+          <span class="link-mark-inner">${link.icon}</span>
         </span>
+        <span class="link-action" aria-hidden="true">&#8599;</span>
       </div>
       <div class="link-main">
         <p class="link-label">${link.label}</p>
-        <p class="link-note">${
-          isInactive ? "Placeholder card until final link is added." : "Open profile"
-        }</p>
+        <p class="link-value">${link.value}</p>
       </div>
       <div class="link-bottomline">
-        <span class="link-note">${isInactive ? "Replace later" : "Open link"}</span>
-        <span class="link-arrow" aria-hidden="true">&#8594;</span>
+        <span class="link-line" aria-hidden="true"></span>
+        <span class="link-glow-dot" aria-hidden="true"></span>
       </div>
     `;
 
