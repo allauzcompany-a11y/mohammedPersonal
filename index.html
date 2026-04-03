@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mohammed Ahmed Rashid</title>
     <meta
+      id="page-description"
       name="description"
       content="Mohammed Ahmed Rashid, CEO and entrepreneur from Sulaymaniyah."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -22,6 +23,33 @@
     <div class="ambient ambient-right"></div>
     <div class="beam beam-left" aria-hidden="true"></div>
     <div class="beam beam-right" aria-hidden="true"></div>
+    <div class="language-switcher">
+      <p class="language-label sr-only" id="language-label">Languages</p>
+      <div
+        class="language-options"
+        id="language-options"
+        role="group"
+        aria-label="Choose language"
+      >
+        <button type="button" class="language-button is-active" data-lang="en" aria-label="English">
+          EN
+        </button>
+        <button
+          type="button"
+          class="language-button"
+          data-lang="ckb"
+          aria-label="Central Kurdish"
+        >
+          &#1705;&#1608;&#1585;&#1583;&#1740;
+        </button>
+        <button type="button" class="language-button" data-lang="ar" aria-label="Arabic">
+          &#1593;&#1585;&#1576;&#1610;
+        </button>
+        <button type="button" class="language-button" data-lang="zh" aria-label="Chinese">
+          &#20013;&#25991;
+        </button>
+      </div>
+    </div>
 
     <main class="page-shell">
       <section class="hero panel reveal">
@@ -33,18 +61,18 @@
           </div>
 
           <div class="name-lockup" aria-label="Mohammed Ahmed Rashid">
-            <p class="eyebrow">Personal Brand Profile</p>
-            <h1>Mohammed</h1>
-            <p class="name-secondary">Ahmed Rashid</p>
+            <p class="eyebrow" id="hero-eyebrow">Personal Brand Profile</p>
+            <h1 id="hero-name-primary">Mohammed</h1>
+            <p class="name-secondary" id="hero-name-secondary">Ahmed Rashid</p>
           </div>
 
           <div class="identity-line">
-            <p class="hero-subtitle">CEO</p>
+            <p class="hero-subtitle" id="hero-role">CEO</p>
             <span class="identity-separator" aria-hidden="true"></span>
-            <p class="hero-location">Sulaymaniyah, Iraq</p>
+            <p class="hero-location" id="hero-location">Sulaymaniyah, Iraq</p>
           </div>
 
-          <p class="lead">
+          <p class="lead" id="hero-lead">
             Mohammed Ahmed Rashid is a CEO and entrepreneur from Sulaymaniyah
             with business experience across multiple sectors. He leads several
             companies and is driven by growth, new opportunities, and creating
@@ -52,29 +80,31 @@
           </p>
 
           <div class="value-chips">
-            <span class="value-chip">Leadership</span>
-            <span class="value-chip">Discipline</span>
-            <span class="value-chip">Innovation</span>
-            <span class="value-chip">Focus</span>
+            <span class="value-chip" id="chip-one">Leadership</span>
+            <span class="value-chip" id="chip-two">Discipline</span>
+            <span class="value-chip" id="chip-three">Innovation</span>
+            <span class="value-chip" id="chip-four">Focus</span>
           </div>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#links">Profile Links</a>
-            <a class="button button-secondary" href="#details">Quick Details</a>
+            <a class="button button-primary" href="#links" id="links-button">Profile Links</a>
+            <a class="button button-secondary" href="#details" id="details-button"
+              >Quick Details</a
+            >
           </div>
 
           <div class="profile-meta" id="details">
             <article class="meta-card">
-              <span class="meta-label">Title</span>
-              <strong>CEO</strong>
+              <span class="meta-label" id="meta-title-label">Title</span>
+              <strong id="meta-title-value">CEO</strong>
             </article>
             <article class="meta-card">
-              <span class="meta-label">Background</span>
-              <strong>Cross-sector business leadership</strong>
+              <span class="meta-label" id="meta-background-label">Background</span>
+              <strong id="meta-background-value">Cross-sector business leadership</strong>
             </article>
             <article class="meta-card">
-              <span class="meta-label">Location</span>
-              <strong>Sulaymaniyah, Iraq</strong>
+              <span class="meta-label" id="meta-location-label">Location</span>
+              <strong id="meta-location-value">Sulaymaniyah, Iraq</strong>
             </article>
           </div>
         </div>
@@ -111,6 +141,7 @@
             <img
               src="mohammed-cropped.png"
               alt="Portrait of Mohammed Ahmed Rashid"
+              id="portrait-image"
               class="portrait"
             />
           </div>
@@ -119,8 +150,8 @@
 
       <section class="links-section reveal" id="links">
         <div class="section-heading">
-          <p class="eyebrow">Connect</p>
-          <h2>Social and contact links</h2>
+          <p class="eyebrow" id="links-eyebrow">Connect</p>
+          <h2 id="links-heading">Social and contact links</h2>
         </div>
         <div class="links-grid" id="links-grid"></div>
       </section>
